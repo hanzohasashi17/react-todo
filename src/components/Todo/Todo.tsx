@@ -1,5 +1,8 @@
 import { useAppDispatch } from '../../hooks'
 import deleteIcon from '../../assets/trash.svg'
+import pending from '../../assets/pending-todo.svg'
+import inProgress from '../../assets/in-progress-todo.svg'
+import completed from '../../assets/completed-todo.svg'
 import './Todo.css'
 import { TodoStatus, TodoType, addTodoDescription } from '../../store/todoSlice'
 import { toggleTodoStatus } from '../../store/todoSlice'
@@ -38,7 +41,7 @@ export function Todo({ id, title, description, status }: TodoType) {
                             value={value}
                             onChange={(e) => setValue(e.target.value)}
                             onBlur={() => {
-                                dispatch(addTodoDescription({id, description: value}))
+                                dispatch(addTodoDescription({ id, description: value }))
                                 setDescriptionEditMode(false)
                             }}
                         />
@@ -54,29 +57,29 @@ export function Todo({ id, title, description, status }: TodoType) {
                 <button
                     className='btn btn-todo btn-sm'
                     data-bs-toggle="tooltip"
-                    data-bs-placement="top" 
+                    data-bs-placement="top"
                     title="Задать статус: 'В ожиданий'"
                     onClick={() => dispatch(toggleTodoStatus({ id, status: TodoStatus.Pending }))}
                 >
-                    Ожидание
+                    <img src={pending} alt="В ожиданий" />
                 </button>
                 <button
                     className='btn btn-todo btn-sm'
                     data-bs-toggle="tooltip"
-                    data-bs-placement="right" 
+                    data-bs-placement="right"
                     title="Задать статус: 'В работе'"
                     onClick={() => dispatch(toggleTodoStatus({ id, status: TodoStatus.InProgress }))}
                 >
-                    В работе
+                    <img src={inProgress} alt="В работе" />
                 </button>
                 <button
                     className='btn btn-todo btn-sm'
                     data-bs-toggle="tooltip"
-                    data-bs-placement="right" 
+                    data-bs-placement="right"
                     title="Задать статус: 'Выполнено'"
                     onClick={() => dispatch(toggleTodoStatus({ id, status: TodoStatus.Completed }))}
                 >
-                    Выполнено
+                    <img src={completed} alt="Выполнено" />
                 </button>
                 <button
                     className='btn btn-todo btn-delete btn-sm'
