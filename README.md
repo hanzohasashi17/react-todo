@@ -17,3 +17,4 @@
        только шаблон запроса, желательно добавить createAsyncThunk.
  - [x] Результат ждем на Github, желательно на github pages.
 
+Github Pages: https://hanzohasashi17.github.io/react-todo/ 
