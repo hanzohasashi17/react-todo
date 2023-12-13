@@ -2,12 +2,12 @@
     background-color: lightgray;
 }
 
-.todo-completed > div:first-child {
+.todo-completed>div:first-child {
     text-decoration: line-through;
     color: gray;
 }
 
-.todo-completed > div:first-child > span {
+.todo-completed>div:first-child>span {
     background-color: gray;
     color: lightgray;
 }
@@ -16,7 +16,7 @@
     background-color: lightpink;
 }
 
-.todo-pending > div > span {
+.todo-pending>div>span {
     background-color: #c0691c;
 }
 
@@ -24,7 +24,7 @@
     background-color: lightskyblue;
 }
 
-.todo-in-progress > div > span {
+.todo-in-progress>div>span {
     background-color: blue;
 }
 
@@ -32,10 +32,11 @@
     border-color: black;
 }
 
-.btn-todo:hover {
-    border-color: black;
-    /* text-decoration-line: underline; */
-    background-color: lightgoldenrodyellow
+@media (hover: hover) {
+    .btn-todo:hover {
+        border-color: black;
+        background-color: lightgoldenrodyellow
+    }
 }
 
 .btn-delete:hover {
