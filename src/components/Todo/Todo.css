@@ -32,11 +32,13 @@
     border-color: black;
 }
 
-@media (hover: hover) {
-    .btn-todo:hover {
-        border-color: black;
-        background-color: lightgoldenrodyellow
-    }
+.btn-todo:hover {
+    border-color: black;
+    background-color: lightgoldenrodyellow
+}
+
+.btn-todo::after {
+    border-color: black;
 }
 
 .btn-delete:hover {
