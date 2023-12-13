@@ -32,14 +32,20 @@
     border-color: black;
 }
 
-.btn-todo:hover {
-    border-color: black;
-    background-color: lightgoldenrodyellow
+@media (hover: hover) {
+    .btn-todo:hover {
+        border-color: black;
+        background-color: lightgoldenrodyellow
+    }
 }
 
-.btn-todo::after {
-    border-color: black;
+@media (hover: none) {
+    .btn-todo:active {
+        border-color: black;
+        background-color: lightgoldenrodyellow
+    }
 }
+
 
 .btn-delete:hover {
     background-color: red;
