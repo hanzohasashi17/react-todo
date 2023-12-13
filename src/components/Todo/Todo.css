@@ -32,20 +32,12 @@
     border-color: black;
 }
 
-@media (pointer: fine) {
+@media (hover: hover) {
     .btn-todo:hover {
         border-color: black;
         background-color: lightgoldenrodyellow;
     }
 }
-
-@media (pointer: coarse) {
-    .btn-todo:active {
-        border-color: black;
-        background-color: lightgoldenrodyellow;
-    }
-}
-
 
 .btn-delete:hover {
     background-color: red;
