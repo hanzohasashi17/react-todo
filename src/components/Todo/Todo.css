@@ -32,17 +32,17 @@
     border-color: black;
 }
 
-@media (hover: hover) {
+@media (pointer: fine) {
     .btn-todo:hover {
         border-color: black;
-        background-color: lightgoldenrodyellow
+        background-color: lightgoldenrodyellow;
     }
 }
 
-@media (hover: none) {
+@media (pointer: coarse) {
     .btn-todo:active {
         border-color: black;
-        background-color: lightgoldenrodyellow
+        background-color: lightgoldenrodyellow;
     }
 }
 
