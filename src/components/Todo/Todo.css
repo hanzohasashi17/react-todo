@@ -1,0 +1,43 @@
+.todo-completed {
+    background-color: lightgray;
+}
+
+.todo-completed > div:first-child {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.todo-completed > div:first-child > span {
+    background-color: gray;
+    color: lightgray;
+}
+
+.todo-pending {
+    background-color: lightpink;
+}
+
+.todo-pending > div > span {
+    background-color: #c0691c;
+}
+
+.todo-in-progress {
+    background-color: lightskyblue;
+}
+
+.todo-in-progress > div > span {
+    background-color: blue;
+}
+
+.btn-todo {
+    border-color: black;
+}
+
+.btn-todo:hover {
+    border-color: black;
+    /* text-decoration-line: underline; */
+    background-color: lightgoldenrodyellow
+}
+
+.btn-delete:hover {
+    background-color: red;
+}
